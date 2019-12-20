@@ -14,9 +14,8 @@ app.use(cors({
   origin:['http://localhost:4200','http://127.0.0.1:4200'],
   credentials: true
 }));
-
+//db connection
 var mongoose = require('mongoose');
-
 mongoose.connect('mongodb+srv://root:Password123@cluster0-nbaoc.mongodb.net/test?retryWrites=true&w=majority');
 
 //passport
