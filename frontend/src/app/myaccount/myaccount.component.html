@@ -1,0 +1,23 @@
+<div class="account">
+    <div class="header">
+        <h1 style="color: rgb(0, 0, 0)">My Account</h1>
+        <p style="margin-left: 3em;"><b>TODO: This page lacks functionality..</b></p>
+    </div>
+    <h1 id="workTimer" style="color:black">Worked Time: {{timeWorkedHours}} hours and {{timeWorkedMinutes}} minutes and {{timeWorkedSeconds}} seconds</h1>
+    <div class="start"> <button (click)="startTimer()">Start</button></div>
+    <div class="stop"> <button (click)="pauseTimer()">Stop</button></div>
+</div>
+
+<div class="container">
+    <div class="hero">
+        <a routerLink="/home" routerLinkActive="active"><h1><img src="../../assets/favicon.png">SwiftBoard</h1></a>
+    </div>
+    <ul>
+        <a routerLink="/announcements" routerLinkActive="active"><li><i class="fas fa-bullhorn"></i>Announcements</li></a>
+        <a routerLink="/dashboard" routerLinkActive="active"><li><i class="fas fa-columns"></i>Dashboard</li></a>
+        <a routerLink="/projects" routerLinkActive="active"><li><i class="fas fa-tasks"></i>Projects</li></a>
+        <a routerLink="/myaccount" routerLinkActive="active"><li><i class="fas fa-user"></i>My Account</li></a>
+        <a routerLink="/helpdesk" routerLinkActive="active"><li><i class="fas fa-hands-helping"></i>Helpdesk</li></a>
+        <a routerLink="/settings" routerLinkActive="active"><li><i class="fas fa-cog"></i>Settings</li></a>
+    </ul>
+</div>

@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="hero">
+        <a routerLink="/home" routerLinkActive="active"><h1><img src="../../assets/favicon.png">SwiftBoard</h1></a>
+    </div>
+    <ul>
+        <a routerLink="/announcements" routerLinkActive="active"><li><i class="fas fa-bullhorn"></i>Announcements</li></a>
+        <a routerLink="/dashboard" routerLinkActive="active"><li><i class="fas fa-columns"></i>Dashboard</li></a>
+        <a routerLink="/projects" routerLinkActive="active"><li><i class="fas fa-tasks"></i>Projects</li></a>
+        <a routerLink="/myaccount" routerLinkActive="active"><li><i class="fas fa-user"></i>My Account</li></a>
+        <a routerLink="/helpdesk" routerLinkActive="active"><li><i class="fas fa-hands-helping"></i>Helpdesk</li></a>
+        <a routerLink="/settings" routerLinkActive="active"><li><i class="fas fa-cog"></i>Settings</li></a>
+    </ul>
+</div>
+
+<div class="settings-container">
+    <div class="header">
+        <h1 style="color: rgb(0, 0, 0)">Settings</h1>
+        <p style="margin-left: 3em;"><b>TODO: This page lacks functionality..</b></p>
+
+    </div>
+    <div class="settings">
+        <div class="settings_user">
+            <form class="form_email">
+                <h3>Change email</h3>
+                Current Email<br>
+                <input type="email" name="current_email">
+                <br>
+                New Email<br>
+                <input type="email" name="new_email">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <form class="form_pw">
+                <h3>Change password</h3>
+                Current password<br>
+                <input type="password" name="current_pw">
+                <br>
+                New password<br>
+                <input type="password" name="new_pw">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="settings_logout">
+            <button (click)="logout()">Logout</button>
+        </div>
+    </div>
+</div>

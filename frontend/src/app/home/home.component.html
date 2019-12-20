@@ -1,0 +1,32 @@
+<div class="home">
+    <div class="header">
+        <h1 style="color: rgb(0, 0, 0)">Welcome, {{username}}!</h1>
+    </div>
+    <h5 style="margin-bottom: 1em; margin-left: 2em;"><b>Get started: </b></h5>
+    <p style="margin-left: 2.5em;">
+        SwiftBoard is an online management system with the intent of optimizing teamwork. <br>
+        You will be able to manage your projects, working hours, organize current projects in boards, etc. <br>
+        <br>
+        The system is developed as a project in the course <b>Distribution and Integration Technologies (SB5-TEC19)</b>. <br>
+        This project is part of the individual #2 handin portfolio, 20-12-2019, and is built on top of the group #1 handin portfolio, 10-11-2019. <br>
+        <b>OBS.</b> The overall project skeleton from #1 and #2 have incomplete functions as this wasn't a priority. <br>
+        The priority of #1 was to set up a project skeleton, that could be used in #2 where the focus was on <b>non-functional requirements</b>.
+        <br><br>
+        
+    </p>
+</div>
+
+<div class="container">
+    <div class="hero">
+        <a routerLink="/home" routerLinkActive="active"><h1>SwiftBoard<img src="../../assets/favicon.png"></h1></a>
+    </div>
+    <ul>
+        <a routerLink="/announcements" routerLinkActive="active"><li><i class="fas fa-bullhorn"></i>Announcements</li></a>
+        <a routerLink="/dashboard" routerLinkActive="active"><li><i class="fas fa-columns"></i>Dashboard</li></a>
+        <a routerLink="/projects" routerLinkActive="active"><li><i class="fas fa-tasks"></i>Projects</li></a>
+        <a routerLink="/myaccount" routerLinkActive="active"><li><i class="fas fa-user"></i>My Account</li></a>
+        <a routerLink="/helpdesk" routerLinkActive="active"><li><i class="fas fa-hands-helping"></i>Helpdesk</li></a>
+        <a routerLink="/settings" routerLinkActive="active"><li><i class="fas fa-cog"></i>Settings</li></a>
+    </ul>
+    
+</div>

@@ -1,0 +1,8 @@
+
+
+<router-outlet></router-outlet>
+<div class="logout">
+<div *ngIf="!(this.router.url === '/login') && !(this.router.url === '/register')">
+    <a class="btn btn-secondary btn-sm" role="button" (click)="logout()">Log out</a>
+</div>
+</div>

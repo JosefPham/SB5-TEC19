@@ -1,0 +1,47 @@
+<div class="container">
+        <div class="hero">
+            <a routerLink="/home" routerLinkActive="active"><h1><img src="../../assets/favicon.png">SwiftBoard</h1></a>
+        </div>
+        <ul>
+            <a routerLink="/announcements" routerLinkActive="active"><li><i class="fas fa-bullhorn"></i>Announcements</li></a>
+            <a routerLink="/dashboard" routerLinkActive="active"><li><i class="fas fa-columns"></i>Dashboard</li></a>
+            <a routerLink="/projects" routerLinkActive="active"><li><i class="fas fa-tasks"></i>Projects</li></a>
+            <a routerLink="/myaccount" routerLinkActive="active"><li><i class="fas fa-user"></i>My Account</li></a>
+            <a routerLink="/helpdesk" routerLinkActive="active"><li><i class="fas fa-hands-helping"></i>Helpdesk</li></a>
+            <a routerLink="/settings" routerLinkActive="active"><li><i class="fas fa-cog"></i>Settings</li></a>
+        </ul>
+</div>
+<div class="post">
+<div class="col-6" style="margin-top: 2em;">    
+    <form [formGroup]="postForm">
+        <div class="form-group">
+            <label for="exampleText">New announcement:</label>
+            <input formControlName="text" type="text" class="form-control" id="exampleText1" aria-describedby="textHelp" placeholder="Write your announcement here...">
+            <small id="textHelp" class="form-text text-muted"></small>
+        </div>
+        
+        <div class="form-group" style="text-align:left;">
+            <button type="button" class="btn btn-dark btn-sm" (click)="post()">Submit</button> 
+        </div>
+        <h2><b>TODO: This page lacks functionality...</b></h2>
+    </form>
+</div>
+
+    <div class="header">
+        <h3 style="color: rgb(0, 0, 0); margin-top: 2em;">Announcements</h3>
+    </div>
+    <div class="col-10">
+    <p>User: [Message] [Date]</p>
+    <p>User: [Message] [Date]</p>
+    <p>User: [Message] [Date]</p>
+    <p>User: [Message] [Date]</p>
+    <p>User: [Message] [Date]</p>
+    <p>User: [Message] [Date]</p>
+    <p>User: [Message] [Date]</p>
+</div>
+</div>
+
+    
+
+
+

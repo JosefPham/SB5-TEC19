@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+
+.container{
+    width: 25%;
+    height: 100vh;
+    background-color: #242939;
+    position: fixed;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    width:2px;
+  }
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 1.5em;
+    width: 1.5em;
+    float: left;
+    margin-bottom:.2em;
+    margin-right:.2em;
+}
+
+h1 {
+    padding: 1em;
+    color: skyblue;
+}
+
+li {
+    padding: 1em 1em 1em 2em;
+    list-style: none;
+}
+
+i {
+    padding-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a li:hover {
+    color: skyblue;
+    background-color: #131425;
+}
+
+.header {
+    border-bottom: 1px solid black;
+    padding-bottom: .2em;
+    margin-bottom: 1em;
+}

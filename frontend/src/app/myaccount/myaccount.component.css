@@ -1,0 +1,17 @@
+.account{
+    position: absolute;
+    left: 25%;
+    width: 80vw;
+    height: 100vh;
+    padding: 1em;
+    background-color: #f0f0f0;
+}
+
+.start {
+    padding: 2.5em
+}
+
+.stop {
+    padding: 2.5em;
+    margin-left:3em;
+}
