@@ -9,7 +9,7 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   post(body:any) {
-    return this.http.post('https://127.0.0.1:3000/users/announcement', body,{
+    return this.http.post('http://127.0.0.1:3000/users/announcement', body,{
       observe:'body',
       withCredentials: true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -17,14 +17,14 @@ export class UserService {
   }
 
   register(body:any) {
-    return this.http.post('https://127.0.0.1:3000/users/register',body,{
+    return this.http.post('http://127.0.0.1:3000/users/register',body,{
       observe:'body',
       headers:new HttpHeaders().append('Content-Type','application/json')
     });
   }
 
   login(body:any) {
-    return this.http.post('https://127.0.0.1:3000/users/login',body,{
+    return this.http.post('http://127.0.0.1:3000/users/login',body,{
       observe:'body',
       withCredentials: true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -32,7 +32,7 @@ export class UserService {
   }
 
   user() {
-    return this.http.get('https://127.0.0.1:3000/users/user',{
+    return this.http.get('http://127.0.0.1:3000/users/user',{
       observe:'body',
       withCredentials: true,
       headers:new HttpHeaders().append('Content-Type','application/json')
@@ -40,7 +40,7 @@ export class UserService {
   }
 
   logout() {
-    return this.http.get('https://127.0.0.1:3000/users/logout', {
+    return this.http.get('http://127.0.0.1:3000/users/logout', {
       observe: 'body',
       withCredentials: true,
       headers:new HttpHeaders().append('Content-Type','application/json')
